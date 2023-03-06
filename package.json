@@ -1,0 +1,27 @@
+{
+  "name": "typescript-html-attributes",
+  "version": "1.0.0",
+  "description": "Typings for HTML Attributes to create objects in JS/TS",
+  "main": "index.d.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capArturo507/typescript-html-attributes.git"
+  },
+  "keywords": [
+    "typescrript",
+    "typings",
+    "types",
+    "HTML",
+    "element",
+    "attributes"
+  ],
+  "author": "Cesar Patiño <cesar.arturo.patino@gmail.con>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/capArturo507/typescript-html-attributes/issues"
+  },
+  "homepage": "https://github.com/capArturo507/typescript-html-attributes#readme"
+}
