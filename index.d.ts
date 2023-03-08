@@ -2,6 +2,8 @@ type BaseAttribute = string | undefined;
 
 type BooleanAttribute = "" | Boolean;
 
+type TargetAttribute = "_self" | "_blank" | "_parent" | "_top" | string;
+
 export type HTMLGlobalAttributes = {
   accesskey: BaseAttribute;
   autocapitalize:
@@ -187,7 +189,7 @@ export type HTMLAnchorAttributes = HTMLGlobalAttributes & {
   hreflang: BaseAttribute;
   ping: BaseAttribute;
   referrerpolicy: BaseAttribute;
-  target: "_self" | "_blank" | "_parent" | "_top" | string;
+  target: TargetAttribute;
   type: BaseAttribute;
 };
 
@@ -203,7 +205,7 @@ export type HTMLAreaAttributes = HTMLGlobalAttributes & {
   ping: BaseAttribute;
   referrerpolicy: BaseAttribute;
   shape: "rect" | "circle" | "poly" | "default";
-  target: "_self" | "_blank" | "_parent" | "_top" | string;
+  target: TargetAttribute;
 };
 
 export type HTMLArticleAttributes = HTMLGlobalAttributes;
@@ -217,4 +219,51 @@ export type HTMLAudioAttributes = HTMLGlobalAttributes & {
   muted: BooleanAttribute;
   preload: "none" | "metadata" | "auto" | "";
   src: BaseAttribute;
+};
+
+export type HTMLBoldAttributes = HTMLGlobalAttributes;
+
+export type HTMLBaseAttributes = HTMLGlobalAttributes & {
+  href: BaseAttribute;
+  target: TargetAttribute;
+};
+
+export type HTMLBDIAttributes = HTMLGlobalAttributes;
+
+export type HTMLBDOAttributes = HTMLGlobalAttributes;
+
+export type HTMLBlockQuoteAttributes = HTMLGlobalAttributes & {
+  cite: BaseAttribute;
+};
+
+export type HTMLBodyAttributes = HTMLGlobalAttributes & {
+  onafterprint: BaseAttribute;
+  onbeforeprint: BaseAttribute;
+  onbeforeunload: BaseAttribute;
+  onhashchange: BaseAttribute;
+  onlanguagechange: BaseAttribute;
+  onmessage: BaseAttribute;
+  onoffline: BaseAttribute;
+  ononline: BaseAttribute;
+  onpopstate: BaseAttribute;
+  onredo: BaseAttribute;
+  onstorage: BaseAttribute;
+  onundo: BaseAttribute;
+};
+
+export type HTMLBrAttributes = HTMLGlobalAttributes;
+
+export type HTMLButtonAttributes = HTMLGlobalAttributes & {
+  form: BaseAttribute;
+  formaction: BaseAttribute;
+  formenctype:
+    | "application/x-www-form-urlencoded"
+    | "multipart/form-data"
+    | "text/plain";
+  formmethod: "post" | "get";
+  formnovalidate: BooleanAttribute;
+  formtarget: TargetAttribute;
+  name: BaseAttribute;
+  type: "submit" | "reset" | "button";
+  value: BaseAttribute;
 };
